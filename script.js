@@ -78,7 +78,8 @@ const platformInfoText = svg
   .attr("x", width / 2)
   .attr("y", height - 10)
   .attr("text-anchor", "middle")
-  .text("Bitcoin / Ethereum (PoW)");
+  .text("Bitcoin / Ethereum (PoW)").attr("font-weight", "bold")
+      .attr("font-size", "16");
 
 const controlPoints = [
   {
@@ -283,33 +284,39 @@ function updatePlatformInfoText() {
     cp1.x === -3 * unit + width / 2 - xOffset &&
     cp3.x === 3 * unit + width / 2 - xOffset
   ) {
-    platformInfoText.text("Bitcoin / Ethereum (PoW)");
+    platformInfoText.text("Bitcoin / Ethereum (PoW)").attr("font-weight", "bold")
+      .attr("font-size", "16");
   } else if (
     cp1.x === -3 * unit + width / 2 - xOffset &&
     cp3.x === 1 * unit + width / 2 - xOffset
   ) {
-    platformInfoText.text("IOTA / EOS");
+    platformInfoText.text("IOTA / EOS").attr("font-weight", "bold")
+      .attr("font-size", "16");
   } else if (
     cp1.x === -3 * unit + width / 2 - xOffset &&
     cp3.x === 2 * unit + width / 2 - xOffset
   ) {
-    platformInfoText.text("Cardano / Dash / Lisk");
+    platformInfoText.text("Cardano / Dash / Lisk").attr("font-weight", "bold")
+      .attr("font-size", "16");
   } else if (
     cp1.x === -1 * unit + width / 2 - xOffset &&
     cp3.x === 1 * unit + width / 2 - xOffset
   ) {
-    platformInfoText.text("Hyperledger / Corda");
+    platformInfoText.text("Hyperledger / Corda").attr("font-weight", "bold")
+      .attr("font-size", "16");
   } else if (
     cp1.x === -2 * unit + width / 2 - xOffset &&
     cp3.x === 2 * unit + width / 2 - xOffset
   ) {
-    platformInfoText.text("NEO");
+    platformInfoText.text("NEO").attr("font-weight", "bold")
+      .attr("font-size", "16");
   } else if (
     cp1.x === -2 * unit + width / 2 - xOffset &&
     cp3.x === 1 * unit + width / 2 - xOffset
   ) {
-    platformInfoText.text("Ripple / NEM");
+    platformInfoText.text("Ripple / NEM").attr("font-weight", "bold")
+      .attr("font-size", "16");
   } else {
-    platformInfoText.text("");
+    platformInfoText.text("NA: Try another combo");
   }
 }
