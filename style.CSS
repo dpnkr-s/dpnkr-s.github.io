@@ -1,0 +1,10 @@
+.control-point {
+  fill: blue;
+  cursor: pointer;
+}
+
+.curve {
+  fill: none;
+  stroke: black;
+  stroke-width: 2px;
+}
