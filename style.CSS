@@ -1,10 +1,39 @@
-.control-point {
-  fill: blue;
-  cursor: pointer;
+
+svg {
+  border: 1px solid #ddd;
 }
 
 .curve {
-  fill: none;
-  stroke: black;
-  stroke-width: 2px;
+    fill: none;
+    stroke: black;
+    stroke-width: 2;
+}
+
+.control-point {
+    cursor: pointer;
+}
+
+.control-point circle {
+    fill: blue;
+    stroke: black;
+    stroke-width: 2;
+}
+
+.control-point text {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    fill: black;
+}
+
+button {
+    background-color: lightblue;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button.frozen {
+    background-color: lightcoral;
 }
